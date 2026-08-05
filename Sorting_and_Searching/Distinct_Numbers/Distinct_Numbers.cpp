@@ -14,12 +14,12 @@ int main() {
  
     int n; cin>>n;
     int temp;
-    unordered_set<int> st;
+    unordered_map<int,int> mp;
     for(int i=0;i<n;i++)
         {
             cin>>temp;    
-            st.insert(temp);
+            mp[temp]++;
         }
-    cout<<st.size()<<'\n';
+    cout<<mp.size()<<'\n';
     return 0;
 }
