@@ -18,11 +18,11 @@ int main() {
     else
     {
         int temp=2;
-        while(temp<n) {
+        while(temp<=n) {
             cout<<temp<<" "; temp+=2;
         }
         temp=1;
-        while(temp<n)
+        while(temp<=n)
         {
             cout<<temp<<" "; temp+=2;
         }
