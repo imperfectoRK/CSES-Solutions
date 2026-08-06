@@ -4,6 +4,7 @@
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Trailing Zeros | Introductory Problems | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Introductory_Problems/Trailing_Zeros/Trailing_Zeros.cpp) |
 | Bit Strings | Introductory Problems | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Introductory_Problems/Bit_Strings/Bit_Strings.cpp) |
 | Two Sets | Introductory Problems | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Introductory_Problems/Two_Sets/Two_Sets.cpp) |
 | Two Knights | Introductory Problems | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Introductory_Problems/Two_Knights/Two_Knights.cpp) |
