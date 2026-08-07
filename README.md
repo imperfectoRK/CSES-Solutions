@@ -4,6 +4,7 @@
 
 | Problem | Category | Solutions |
 | :--- | :--- | :--- |
+| Dice Combinations | Dynamic Programming | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Dynamic_Programming/Dice_Combinations/Dice_Combinations.cpp) |
 | Creating Strings | Introductory Problems | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Introductory_Problems/Creating_Strings/Creating_Strings.cpp) |
 | Tower of Hanoi | Introductory Problems | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Introductory_Problems/Tower_of_Hanoi/Tower_of_Hanoi.cpp) |
 | Gray Code | Introductory Problems | [ C++ ](https://github.com/imperfectoRK/CSES-Solutions/blob/main/Introductory_Problems/Gray_Code/Gray_Code.cpp) |
