@@ -17,41 +17,45 @@ int main() {
  
     vector<int> freq(26, 0);
  
-    for(char &c : s)
+    for (char c : s) {
         freq[c - 'A']++;
+    }
  
-    int count = 0, index = -1;
+    int oddCount = 0;
+    int oddIndex = -1;
  
-    for(int i = 0; i < 26; i++) {
-        if(freq[i] % 2 == 1) {
-            index = i;
-            count++;
+    for (int i = 0; i < 26; i++) {
+        if (freq[i] % 2 == 1) {
+            oddCount++;
+            oddIndex = i;
         }
     }
  
-    if(count > 1) {
+    // A palindrome can have at most one character
+    // with an odd frequency.
+    if (oddCount > 1) {
         cout << "NO SOLUTION\n";
         return 0;
     }
  
-    string pal;
+    string left;
  
-    for(int i = 0; i < 26; i++) {
-        if(freq[i] != 0 && i != index) {
-            string temp = string(freq[i] / 2, i + 'A');
-            pal += temp;
-        }
+    // Build the left half
+    for (int i = 0; i < 26; i++) {
+        left += string(freq[i] / 2, char('A' + i));
     }
  
-    string rev = pal;
-    reverse(rev.begin(), rev.end());
+    // Build the right half
+    string right = left;
+    reverse(right.begin(), right.end());
  
-    if(index != -1)
-        pal += char(index + 'A') + rev;
-    else
-        pal += rev;
+    // Middle character, if any
+    string middle = "";
+    if (oddIndex != -1) {
+        middle = char('A' + oddIndex);
+    }
  
-    cout << pal << '\n';
+    cout << left << middle << right << '\n';
  
     return 0;
 }
